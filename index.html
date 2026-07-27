@@ -105,7 +105,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="محاسبه قیمت سفر برای راننده‌ها | ببرم؟">
 <meta name="twitter:description" content="ماشین‌حساب ببرم؟ برای برآورد قیمت پیشنهادی سفر، هزینه واقعی هر کیلومتر، سوخت، استهلاک، بیمه، سرویس و تعمیرات خودرو برای راننده‌های اسنپ، تپسی و سفرهای شخصی.">
-<meta name="author" content="bebaram.com"><meta name="copyright" content="© bebaram.com"></head><body><div class="wrap"><section class="hero"><div class="hero-card"><div class="top-meta"><span class="brand brand-logo"><strong>ببرم؟</strong><small>محاسبه قیمت سفر برای راننده</small></span><span class="update-note">آخرین بروزرسانی قیمت‌ها: خرداد ۱۴۰۵</span></div><h1>برای هر سفر چقدر بگیرم؟</h1><aside class="result-card" id="resultCard"><div class="main-price"><small>مبلغ پیشنهادی سفر</small><strong id="fairPrice">-</strong><div class="price-range">بازه پیشنهادی با سود کمتر/بیشتر: <span id="minPrice">-</span> تا <span id="plusPrice">-</span></div><div class="driver-note">محاسبه تخمینی بر اساس سوخت، استهلاک، بیمه، تعمیرات، سود راننده و کارمزد</div><div class="result-actions"><button type="button" class="ghost" onclick="scrollToControls()">تنظیمات محاسبه</button><button type="button" class="ghost subtle" onclick="restartCurrentProfile()">بازگردانی پیش‌فرض‌ها</button></div></div></aside><div class="distance-hero"><div class="field distance-scale" data-key="tripKm" data-scale="distance" data-unit="km" data-title="مسافت این سفر"></div></div><div class="quick-details"><div class="km-chart-wrap"><div class="km-donut" id="kmDonut"><div class="km-donut-center"><strong id="kmTotal">-</strong><small>هزینه واقعی هر کیلومتر</small></div></div><div class="km-legend" id="miniSummary"></div></div></div></div></section>
+<meta name="author" content="bebaram.com"><meta name="copyright" content="© bebaram.com"></head><body><div class="wrap"><section class="hero"><div class="hero-card"><div class="top-meta"><span class="brand brand-logo"><strong>ببرم؟</strong><small>محاسبه قیمت سفر برای راننده</small></span><span class="update-note">آخرین بروزرسانی قیمت‌ها: مرداد ۱۴۰۵</span></div><h1>برای هر سفر چقدر بگیرم؟</h1><aside class="result-card" id="resultCard"><div class="main-price"><small>مبلغ پیشنهادی سفر</small><strong id="fairPrice">-</strong><div class="price-range">بازه پیشنهادی با سود کمتر/بیشتر: <span id="minPrice">-</span> تا <span id="plusPrice">-</span></div><div class="driver-note">محاسبه تخمینی بر اساس سوخت، استهلاک، بیمه، تعمیرات، سود راننده و کارمزد</div><div class="result-actions"><button type="button" class="ghost" onclick="scrollToControls()">تنظیمات محاسبه</button><button type="button" class="ghost subtle" onclick="restartCurrentProfile()">بازگردانی پیش‌فرض‌ها</button></div></div></aside><div class="distance-hero"><div class="field distance-scale" data-key="tripKm" data-scale="distance" data-unit="km" data-title="مسافت این سفر"></div></div><div class="quick-details"><div class="km-chart-wrap"><div class="km-donut" id="kmDonut"><div class="km-donut-center"><strong id="kmTotal">-</strong><small>هزینه واقعی هر کیلومتر</small></div></div><div class="km-legend" id="miniSummary"></div></div></div></div></section>
 <section class="seo-intro" aria-label="معرفی ابزار محاسبه هزینه سفر">
   <h2>محاسبه هزینه واقعی سفر برای راننده‌های اسنپ، تپسی و سفرهای شخصی</h2>
   <p>ببرم؟ یک ماشین‌حساب قیمت سفر برای راننده‌هاست. این ابزار کمک می‌کند قبل از انجام سفر، مبلغ پیشنهادی را بر اساس هزینه واقعی هر کیلومتر خودرو و با درنظر گرفتن بنزین، استهلاک، بیمه، سرویس‌های دوره‌ای، قطعات مصرفی، تعمیرات احتمالی، کارمزد و سود راننده برآورد کنی. نتیجه این محاسبه قیمت رسمی اسنپ یا تپسی نیست؛ یک برآورد تخمینی و مستقل برای فهمیدن هزینه واقعی خودرو در سفرهای شهری و شخصی است.</p>
@@ -166,10 +166,10 @@
 </section>
 <script>
 const carProfiles={
-  pride:{title:'کوییک، ساینا، تیبا',tripKm:10,tripsPerDay:8,workDays:24,annualKm:20,dailyKm:70,monthlyUseDays:24,fuelUse:7.5,fuelPrice:3,profitFair:20,commission:10,newCarPrice:1300,usefulLife:15,thirdInsurance:9,bodyInsurance:0,otherRepairs:15,repairEngine:3,repairTransmission:2,repairCooling:2,repairSteering:3,repairElectrical:2,repairAc:1,repairBrakeLeaks:1,repairMisc:1,washWeeks:3,washCost:180,engineOilKm:6,engineOilCost:1.6,airFilterKm:10,airFilterCost:0.4,cabinFilterKm:10,cabinFilterCost:0.3,sparkPlugsKm:25,sparkPlugsCost:0.9,batteryYears:2.5,batteryCost:4.2,tiresKm:60,tiresCost:7.0,timingKm:60,timingCost:5.0,alternatorBeltKm:50,alternatorBeltCost:1.0,gearboxOilKm:40,gearboxOilCost:1.4,coolantKm:50,coolantCost:0.9,frontPadsKm:30,frontPadsCost:1.6,rearPadsKm:45,rearPadsCost:1.4,clutchKm:70,clutchCost:8.5,catalystKm:120,catalystCost:10,oxygenSensorKm:80,oxygenSensorCost:2.5,injectorKm:80,injectorCost:1.0,wiperBladesYears:1.5,wiperBladesCost:0.45},
-  p206:{title:'پژو ۲۰۶ / ۲۰۷',tripKm:10,tripsPerDay:8,workDays:24,annualKm:20,dailyKm:70,monthlyUseDays:24,fuelUse:8.5,fuelPrice:3,profitFair:22,commission:10,newCarPrice:1750,usefulLife:15,thirdInsurance:10.5,bodyInsurance:0,otherRepairs:25,repairEngine:5,repairTransmission:4,repairCooling:3,repairSteering:5,repairElectrical:3,repairAc:2,repairBrakeLeaks:1.5,repairMisc:1.5,washWeeks:3,washCost:200,engineOilKm:6,engineOilCost:2.0,airFilterKm:10,airFilterCost:0.5,cabinFilterKm:10,cabinFilterCost:0.4,sparkPlugsKm:25,sparkPlugsCost:1.2,batteryYears:2.5,batteryCost:5.5,tiresKm:60,tiresCost:8.0,timingKm:60,timingCost:8.5,alternatorBeltKm:50,alternatorBeltCost:1.2,gearboxOilKm:40,gearboxOilCost:1.7,coolantKm:50,coolantCost:1.0,frontPadsKm:30,frontPadsCost:2.2,rearPadsKm:45,rearPadsCost:1.8,clutchKm:70,clutchCost:12.0,catalystKm:120,catalystCost:12,oxygenSensorKm:80,oxygenSensorCost:3,injectorKm:80,injectorCost:1.2,wiperBladesYears:1.5,wiperBladesCost:0.55},
-  samand:{title:'سمند / پژو پارس / سورن پلاس',tripKm:10,tripsPerDay:8,workDays:24,annualKm:20,dailyKm:70,monthlyUseDays:24,fuelUse:10.5,fuelPrice:3,profitFair:24,commission:10,newCarPrice:1850,usefulLife:15,thirdInsurance:10.5,bodyInsurance:0,otherRepairs:32,repairEngine:7,repairTransmission:5,repairCooling:4,repairSteering:6,repairElectrical:4,repairAc:2.5,repairBrakeLeaks:1.5,repairMisc:2,washWeeks:3,washCost:220,engineOilKm:6,engineOilCost:2.3,airFilterKm:10,airFilterCost:0.55,cabinFilterKm:10,cabinFilterCost:0.5,sparkPlugsKm:25,sparkPlugsCost:1.4,batteryYears:2.5,batteryCost:6.0,tiresKm:60,tiresCost:10.0,timingKm:60,timingCost:9.0,alternatorBeltKm:50,alternatorBeltCost:1.3,gearboxOilKm:40,gearboxOilCost:2.0,coolantKm:50,coolantCost:1.1,frontPadsKm:30,frontPadsCost:2.6,rearPadsKm:45,rearPadsCost:2.2,clutchKm:70,clutchCost:13.5,catalystKm:120,catalystCost:14,oxygenSensorKm:80,oxygenSensorCost:3.5,injectorKm:80,injectorCost:1.4,wiperBladesYears:1.5,wiperBladesCost:0.65},
-  custom:{title:'خودروی نمونه / قابل تنظیم',tripKm:10,tripsPerDay:8,workDays:24,annualKm:20,dailyKm:70,monthlyUseDays:24,fuelUse:10,fuelPrice:3,profitFair:20,commission:10,newCarPrice:1500,usefulLife:15,thirdInsurance:10.5,bodyInsurance:0,otherRepairs:20,repairEngine:4,repairTransmission:3,repairCooling:3,repairSteering:4,repairElectrical:2.5,repairAc:1.5,repairBrakeLeaks:1,repairMisc:1,washWeeks:3,washCost:200,engineOilKm:6,engineOilCost:2.0,airFilterKm:10,airFilterCost:0.5,cabinFilterKm:10,cabinFilterCost:0.4,sparkPlugsKm:25,sparkPlugsCost:1.2,batteryYears:2.5,batteryCost:5.5,tiresKm:60,tiresCost:8.0,timingKm:60,timingCost:8.5,alternatorBeltKm:50,alternatorBeltCost:1.2,gearboxOilKm:40,gearboxOilCost:1.7,coolantKm:50,coolantCost:1.0,frontPadsKm:30,frontPadsCost:2.2,rearPadsKm:45,rearPadsCost:1.8,clutchKm:70,clutchCost:12.0,catalystKm:120,catalystCost:12,oxygenSensorKm:80,oxygenSensorCost:3,injectorKm:80,injectorCost:1.2,wiperBladesYears:1.5,wiperBladesCost:0.55}
+  pride:{title:'کوییک، ساینا، تیبا',tripKm:10,tripsPerDay:8,workDays:24,annualKm:20,dailyKm:70,monthlyUseDays:24,fuelUse:7.5,fuelPrice:3,profitFair:20,commission:10,newCarPrice:1100,usefulLife:15,thirdInsurance:9,bodyInsurance:0,otherRepairs:15,repairEngine:3,repairTransmission:2,repairCooling:2,repairSteering:3,repairElectrical:2,repairAc:1,repairBrakeLeaks:1,repairMisc:1,washWeeks:3,washCost:180,engineOilKm:6,engineOilCost:2,airFilterKm:10,airFilterCost:0.45,cabinFilterKm:10,cabinFilterCost:0.25,sparkPlugsKm:25,sparkPlugsCost:1,batteryYears:2.5,batteryCost:5.8,tiresKm:60,tiresCost:18.5,timingKm:60,timingCost:5.0,alternatorBeltKm:50,alternatorBeltCost:1.0,gearboxOilKm:40,gearboxOilCost:1.4,coolantKm:50,coolantCost:1.1,frontPadsKm:30,frontPadsCost:2.8,rearPadsKm:45,rearPadsCost:2,clutchKm:70,clutchCost:10,catalystKm:120,catalystCost:12,oxygenSensorKm:80,oxygenSensorCost:3.5,injectorKm:80,injectorCost:1.0,wiperBladesYears:1.5,wiperBladesCost:0.6},
+  p206:{title:'پژو ۲۰۶ / ۲۰۷',tripKm:10,tripsPerDay:8,workDays:24,annualKm:20,dailyKm:70,monthlyUseDays:24,fuelUse:8.5,fuelPrice:3,profitFair:22,commission:10,newCarPrice:1700,usefulLife:15,thirdInsurance:10.5,bodyInsurance:0,otherRepairs:25,repairEngine:5,repairTransmission:4,repairCooling:3,repairSteering:5,repairElectrical:3,repairAc:2,repairBrakeLeaks:1.5,repairMisc:1.5,washWeeks:3,washCost:200,engineOilKm:6,engineOilCost:2.2,airFilterKm:10,airFilterCost:0.55,cabinFilterKm:10,cabinFilterCost:0.3,sparkPlugsKm:25,sparkPlugsCost:1.4,batteryYears:2.5,batteryCost:6.2,tiresKm:60,tiresCost:20.5,timingKm:60,timingCost:8.5,alternatorBeltKm:50,alternatorBeltCost:1.2,gearboxOilKm:40,gearboxOilCost:1.7,coolantKm:50,coolantCost:1.2,frontPadsKm:30,frontPadsCost:3.9,rearPadsKm:45,rearPadsCost:2.4,clutchKm:70,clutchCost:14,catalystKm:120,catalystCost:15,oxygenSensorKm:80,oxygenSensorCost:4,injectorKm:80,injectorCost:1.2,wiperBladesYears:1.5,wiperBladesCost:0.7},
+  samand:{title:'سمند / پژو پارس / سورن پلاس',tripKm:10,tripsPerDay:8,workDays:24,annualKm:20,dailyKm:70,monthlyUseDays:24,fuelUse:10.5,fuelPrice:3,profitFair:24,commission:10,newCarPrice:1650,usefulLife:15,thirdInsurance:10.5,bodyInsurance:0,otherRepairs:32,repairEngine:7,repairTransmission:5,repairCooling:4,repairSteering:6,repairElectrical:4,repairAc:2.5,repairBrakeLeaks:1.5,repairMisc:2,washWeeks:3,washCost:220,engineOilKm:6,engineOilCost:2.5,airFilterKm:10,airFilterCost:0.6,cabinFilterKm:10,cabinFilterCost:0.4,sparkPlugsKm:25,sparkPlugsCost:1.6,batteryYears:2.5,batteryCost:6.8,tiresKm:60,tiresCost:24.5,timingKm:60,timingCost:9.0,alternatorBeltKm:50,alternatorBeltCost:1.3,gearboxOilKm:40,gearboxOilCost:2.0,coolantKm:50,coolantCost:1.4,frontPadsKm:30,frontPadsCost:4.2,rearPadsKm:45,rearPadsCost:2.8,clutchKm:70,clutchCost:16,catalystKm:120,catalystCost:17,oxygenSensorKm:80,oxygenSensorCost:4.5,injectorKm:80,injectorCost:1.4,wiperBladesYears:1.5,wiperBladesCost:0.8},
+  custom:{title:'خودروی نمونه / قابل تنظیم',tripKm:10,tripsPerDay:8,workDays:24,annualKm:20,dailyKm:70,monthlyUseDays:24,fuelUse:10,fuelPrice:3,profitFair:20,commission:10,newCarPrice:1500,usefulLife:15,thirdInsurance:10.5,bodyInsurance:0,otherRepairs:20,repairEngine:4,repairTransmission:3,repairCooling:3,repairSteering:4,repairElectrical:2.5,repairAc:1.5,repairBrakeLeaks:1,repairMisc:1,washWeeks:3,washCost:200,engineOilKm:6,engineOilCost:2.2,airFilterKm:10,airFilterCost:0.55,cabinFilterKm:10,cabinFilterCost:0.3,sparkPlugsKm:25,sparkPlugsCost:1.4,batteryYears:2.5,batteryCost:6.2,tiresKm:60,tiresCost:20.5,timingKm:60,timingCost:8.5,alternatorBeltKm:50,alternatorBeltCost:1.2,gearboxOilKm:40,gearboxOilCost:1.7,coolantKm:50,coolantCost:1.2,frontPadsKm:30,frontPadsCost:3.9,rearPadsKm:45,rearPadsCost:2.4,clutchKm:70,clutchCost:14,catalystKm:120,catalystCost:15,oxygenSensorKm:80,oxygenSensorCost:4,injectorKm:80,injectorCost:1.2,wiperBladesYears:1.5,wiperBladesCost:0.7}
 };
 let currentProfile='custom';
 let state={...carProfiles[currentProfile]};
@@ -199,23 +199,23 @@ const services=[
 const serviceRanges={weeks:[1,8,1],years:[1,5,.5],km:[5,150,5],costThousand:[50,500,10],costMillion:[0,30,0.1]};
 
 const itemRanges={
-  engineOil:{period:[3,15,1],cost:[0.5,4,0.1]},
+  engineOil:{period:[3,15,1],cost:[0.8,5,0.1]},
   airFilter:{period:[5,30,1],cost:[0.1,1,0.05]},
   cabinFilter:{period:[5,30,1],cost:[0.1,1,0.05]},
-  sparkPlugs:{period:[10,60,5],cost:[0.3,4,0.1]},
+  sparkPlugs:{period:[10,60,5],cost:[0.5,4,0.1]},
   wash:{period:[1,8,1],cost:[50,500,10]},
   battery:{period:[1.5,5,0.5],cost:[3,12,0.1]},
-  tires:{period:[30,100,5],cost:[4,20,0.5]},
+  tires:{period:[30,100,5],cost:[8,35,0.5]},
   timing:{period:[40,100,5],cost:[1,8,0.1]},
   alternatorBelt:{period:[30,100,5],cost:[0.3,4,0.1]},
   gearboxOil:{period:[20,80,5],cost:[0.5,5,0.1]},
-  coolant:{period:[20,100,5],cost:[0.3,3,0.1]},
-  wiperBlades:{period:[0.5,3,0.5],cost:[0.2,2,0.05]},
-  frontPads:{period:[15,60,5],cost:[0.8,6,0.1]},
-  rearPads:{period:[20,80,5],cost:[0.5,5,0.1]},
-  clutch:{period:[40,140,5],cost:[5,25,0.5]},
-  catalyst:{period:[60,180,10],cost:[5,30,0.5]},
-  oxygenSensor:{period:[40,160,5],cost:[1,8,0.1]},
+  coolant:{period:[20,100,5],cost:[0.5,3,0.1]},
+  wiperBlades:{period:[0.5,3,0.5],cost:[0.3,2,0.1]},
+  frontPads:{period:[15,60,5],cost:[1,8,0.1]},
+  rearPads:{period:[20,80,5],cost:[0.8,6,0.1]},
+  clutch:{period:[40,140,5],cost:[6,35,0.5]},
+  catalyst:{period:[60,180,10],cost:[8,40,0.5]},
+  oxygenSensor:{period:[40,160,5],cost:[1.5,10,0.1]},
   injector:{period:[30,150,5],cost:[0.5,5,0.1]}
 };
 const fieldIcons={tripKm:'🛣️',tripsPerDay:'🔁',workDays:'📅',annualKm:'📏',dailyKm:'🛣️',monthlyUseDays:'📅',fuelUse:'⛽',fuelPrice:'💵',profitFair:'📈',commission:'٪',newCarPrice:'🚗',usefulLife:'⏳',thirdInsurance:'🧾',bodyInsurance:'🛡️',otherRepairs:'🔧',repairEngine:'🧱',repairTransmission:'⚙️',repairCooling:'🌡️',repairSteering:'🚙',repairElectrical:'🔌',repairAc:'❄️',repairBrakeLeaks:'🛑',repairMisc:'🧰'};
@@ -609,7 +609,7 @@ function calculate(){
 }
 
 function persistSettings(){
-  try{localStorage.setItem('bebaram_v5_78_state',JSON.stringify({currentProfile,state}));}catch(e){}
+  try{localStorage.setItem('bebaram_v5_79_state',JSON.stringify({currentProfile,state}));}catch(e){}
 }
 
 function setFuelPrice(value){
@@ -621,7 +621,7 @@ function setFuelPrice(value){
 }
 function loadProfile(key){currentProfile=key;state={...carProfiles[key]};buildTabs();buildMainControls();buildRepairBasis();buildServices();calculate();}
 function saveSettings(){persistSettings();}
-function resetSettings(){localStorage.removeItem('bebaram_v5_78_state');loadProfile('custom');}
+function resetSettings(){localStorage.removeItem('bebaram_v5_79_state');loadProfile('custom');}
 function scrollToControls(){
   const el=document.getElementById('controlsAnchor') || document.getElementById('carTabs');
   if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
@@ -630,7 +630,7 @@ function restartCurrentProfile(){
   loadProfile(currentProfile);
 }
 
-function init(){const saved=localStorage.getItem('bebaram_v5_78_state');if(saved){try{const s=JSON.parse(saved);currentProfile=s.currentProfile||'custom';state={...carProfiles[currentProfile],...(s.state||{})};}catch(e){}}buildTabs();buildMainControls();buildRepairBasis();buildServices();calculate();}
+function init(){const saved=localStorage.getItem('bebaram_v5_79_state');if(saved){try{const s=JSON.parse(saved);currentProfile=s.currentProfile||'custom';state={...carProfiles[currentProfile],...(s.state||{})};}catch(e){}}buildTabs();buildMainControls();buildRepairBasis();buildServices();calculate();}
 init();
 </script>
 </body></html>
