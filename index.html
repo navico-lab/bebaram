@@ -12,7 +12,7 @@
 .wrap>.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:start}.card{padding:18px;transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}.card:hover{transform:translateY(-1px);box-shadow:var(--shadow);border-color:#d3dfe9}.control-card{padding:0;overflow:hidden}
     .control-card > .field:last-child{margin-bottom:16px}
     .control-card > details:last-child{margin-bottom:16px}
-    .fuel-presets + .field:last-child{margin-bottom:16px}
+    
     .service-section{padding-bottom:18px}.section-side-note{margin:12px 0 0;color:#64748b;font-size:13px;font-weight:800;line-height:1.8;background:#f8fafc;border:1px solid #e3eaf1;border-radius:14px;padding:8px 11px}
     .repair-section .repair-basis{margin:14px 0 0}
     
@@ -128,7 +128,7 @@
     </div>
   </section>
   <nav class="tabs" id="carTabs" aria-label="انتخاب نوع خودرو"></nav>
-  <div class="grid"><div class="settings-group-title">هزینه‌ها و فرض‌های اصلی</div><section class="card control-card fuel-card"><h2 class="section-title"><span class="item-icon">⛽</span>۱) سوخت و قیمت‌گذاری سفر</h2><div class="field" data-key="fuelUse" data-min="5" data-max="18" data-step="0.5" data-unit="L/100km" data-title="مصرف بنزین"></div><div class="field" data-key="fuelPrice" data-min="0" data-max="15" data-step="1" data-unit="هزار تومان/لیتر" data-title="قیمت هر لیتر بنزین"></div><div class="fuel-presets" aria-label="انتخاب سریع قیمت بنزین"><button type="button" onclick="setFuelPrice(1.5)">۱۵۰۰ تومان</button><button type="button" onclick="setFuelPrice(3)">۳۰۰۰ تومان</button><button type="button" onclick="setFuelPrice(5)">۵۰۰۰ تومان</button><button type="button" onclick="setFuelPrice(10)">۱۰٬۰۰۰ تومان</button></div><div class="field" data-key="profitFair" data-min="5" data-max="50" data-step="1" data-unit="%" data-title="درصد سود موردنظر راننده"></div><div class="field" data-key="commission" data-min="0" data-max="25" data-step="1" data-unit="%" data-title="کارمزد پلتفرم / واسطه"></div></section><section class="card control-card usage-card"><h2 class="section-title"><span class="item-icon">📏</span>۲) کارکرد و استهلاک خودرو</h2><div class="field" data-key="dailyKm" data-min="10" data-max="300" data-step="5" data-unit="km/روز" data-title="میانگین کارکرد روزانه"></div><div class="field" data-key="monthlyUseDays" data-min="5" data-max="30" data-step="1" data-unit="روز/ماه" data-title="تعداد روز استفاده در ماه"></div><div class="derived-note">کارکرد سالانه تقریبی: <strong id="annualKmPreview">-</strong></div><div class="field" data-key="newCarPrice" data-min="500" data-max="3000" data-step="50" data-unit="میلیون تومان" data-title="قیمت خودروی نو مشابه"></div><div class="field" data-key="usefulLife" data-min="5" data-max="25" data-step="1" data-unit="سال" data-title="عمر مفید خودرو تا اسقاط"></div><details class="assumption-details"><summary>فرض استهلاک</summary><p>خودرو صفر وارد کار می‌شود و در پایان عمر مفید اسقاط می‌شود. ارزش فروش آخر دوره در این مدل کسر نشده است. برای خودروهایی که تولید صفر ندارند، قیمت پیش‌فرض بر اساس نزدیک‌ترین خودروی صفر هم‌رده تنظیم شده است.</p></details></section><section class="card control-card fixed-card"><h2 class="section-title"><span class="item-icon">🧾</span>۳) بیمه‌های خودرو</h2><div class="field" data-key="thirdInsurance" data-min="5" data-max="25" data-step="0.5" data-unit="میلیون تومان/سال" data-title="هزینه خرید بیمه شخص ثالث"></div><div class="field" data-key="bodyInsurance" data-min="0" data-max="60" data-step="0.5" data-unit="میلیون تومان/سال" data-title="هزینه خرید بیمه بدنه"></div>
+  <div class="grid"><div class="settings-group-title">هزینه‌ها و فرض‌های اصلی</div><section class="card control-card fuel-card"><h2 class="section-title"><span class="item-icon">⛽</span>۱) سوخت و قیمت‌گذاری سفر</h2><div class="field" data-key="fuelUse" data-min="5" data-max="18" data-step="0.5" data-unit="L/100km" data-title="مصرف بنزین"></div><div class="field" data-key="fuelPrice" data-min="0" data-max="15" data-step="1" data-unit="هزار تومان/لیتر" data-title="قیمت هر لیتر بنزین"></div><div class="field" data-key="profitFair" data-min="5" data-max="50" data-step="1" data-unit="%" data-title="درصد سود موردنظر راننده"></div><div class="field" data-key="commission" data-min="0" data-max="25" data-step="1" data-unit="%" data-title="کارمزد پلتفرم / واسطه"></div></section><section class="card control-card usage-card"><h2 class="section-title"><span class="item-icon">📏</span>۲) کارکرد و استهلاک خودرو</h2><div class="field" data-key="dailyKm" data-min="10" data-max="300" data-step="5" data-unit="km/روز" data-title="میانگین کارکرد روزانه"></div><div class="field" data-key="monthlyUseDays" data-min="5" data-max="30" data-step="1" data-unit="روز/ماه" data-title="تعداد روز استفاده در ماه"></div><div class="derived-note">کارکرد سالانه تقریبی: <strong id="annualKmPreview">-</strong></div><div class="field" data-key="newCarPrice" data-min="500" data-max="3000" data-step="50" data-unit="میلیون تومان" data-title="قیمت خودروی نو مشابه"></div><div class="field" data-key="usefulLife" data-min="5" data-max="25" data-step="1" data-unit="سال" data-title="عمر مفید خودرو تا اسقاط"></div><details class="assumption-details"><summary>فرض استهلاک</summary><p>خودرو صفر وارد کار می‌شود و در پایان عمر مفید اسقاط می‌شود. ارزش فروش آخر دوره در این مدل کسر نشده است. برای خودروهایی که تولید صفر ندارند، قیمت پیش‌فرض بر اساس نزدیک‌ترین خودروی صفر هم‌رده تنظیم شده است.</p></details></section><section class="card control-card fixed-card"><h2 class="section-title"><span class="item-icon">🧾</span>۳) بیمه‌های خودرو</h2><div class="field" data-key="thirdInsurance" data-min="5" data-max="25" data-step="0.5" data-unit="میلیون تومان/سال" data-title="هزینه خرید بیمه شخص ثالث"></div><div class="field" data-key="bodyInsurance" data-min="0" data-max="60" data-step="0.5" data-unit="میلیون تومان/سال" data-title="هزینه خرید بیمه بدنه"></div>
       </section><div class="settings-group-title maintenance-title">نگهداری، تعمیرات و موارد احتمالی</div><section class="card wide service-section"><h2 class="section-title"><span class="item-icon">🧰</span>۴) سرویس‌ها و قطعات دوره‌ای خودرو</h2><div class="grid" id="serviceGridMain"></div></section><section class="card wide service-section extras-section"><details class="advanced-services section-title-details">
         <summary class="section-title extras-title-summary"><span class="item-icon">🧩</span><span>۵) قطعات و تعمیرات کم‌تکرار</span><span class="extras-title-total">جمع سالانه: <strong id="rarePartsTotal">-</strong></span></summary>
         <p class="section-inline-note">مواردی که معمولاً دیرتر یا نامنظم‌تر پیش می‌آیند، اما در هزینه واقعی خودرو اثر می‌گذارند.</p><div class="grid" id="serviceGridAdvanced"></div></details></section><section class="card wide service-section repair-section"><details class="repair-basis section-title-details">
@@ -620,7 +620,7 @@ function calculate(){
 }
 
 function persistSettings(){
-  try{localStorage.setItem('bebaram_v5_82_state',JSON.stringify({currentProfile,state}));}catch(e){}
+  try{localStorage.setItem('bebaram_v5_83_state',JSON.stringify({currentProfile,state}));}catch(e){}
 }
 
 function setFuelPrice(value){
@@ -632,7 +632,7 @@ function setFuelPrice(value){
 }
 function loadProfile(key){currentProfile=key;state={...carProfiles[key]};buildTabs();buildMainControls();buildRepairBasis();buildServices();calculate();}
 function saveSettings(){persistSettings();}
-function resetSettings(){localStorage.removeItem('bebaram_v5_82_state');loadProfile('custom');}
+function resetSettings(){localStorage.removeItem('bebaram_v5_83_state');loadProfile('custom');}
 function scrollToControls(){
   const el=document.getElementById('controlsAnchor') || document.getElementById('carTabs');
   if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
@@ -641,7 +641,7 @@ function restartCurrentProfile(){
   loadProfile(currentProfile);
 }
 
-function init(){const saved=localStorage.getItem('bebaram_v5_82_state');if(saved){try{const s=JSON.parse(saved);currentProfile=s.currentProfile||'custom';state={...carProfiles[currentProfile],...(s.state||{})};}catch(e){}}buildTabs();buildMainControls();buildRepairBasis();buildServices();calculate();}
+function init(){const saved=localStorage.getItem('bebaram_v5_83_state');if(saved){try{const s=JSON.parse(saved);currentProfile=s.currentProfile||'custom';state={...carProfiles[currentProfile],...(s.state||{})};}catch(e){}}buildTabs();buildMainControls();buildRepairBasis();buildServices();calculate();}
 init();
 </script>
 </body></html>
